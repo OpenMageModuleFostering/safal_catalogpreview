@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package>
+    <name>Safal_Catalogpreview</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Safal Catalog Preview is an extension to preview enlarge product image to customers on your store. &#xD;
+&#xD;
+It's fully customizable from admin.</summary>
+    <description>&lt;p&gt;Safal Catalog Preview is an extension to enlarge product image preview to customers on your store. It's fully customizable from admin.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Safal Catalog Preview&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;1. 100% free to use and easy to install via Magento Connect.&lt;/p&gt;&#xD;
+&lt;p&gt;2. Requires no changes in magento core files.&lt;/p&gt;&#xD;
+&lt;p&gt;3. Developed using Prototype. So No Jquery Confict on your store.&lt;/p&gt;&#xD;
+&lt;p&gt;4. Preview popup window automatically set according to screen view port.&lt;/p&gt;&#xD;
+&lt;p&gt;5. Custom Set preview popup styling.&lt;/p&gt;&#xD;
+&lt;p&gt;6. Custom Set product name size, style and position on preview box.&lt;/p&gt;&#xD;
+&lt;p&gt;7. Ability to allow preview on selected or every categories.&lt;/p&gt;&#xD;
+&lt;p&gt;8. Allows you to upload your custom loader image from admin.&lt;/p&gt;&#xD;
+&lt;p&gt;9. Use Prototype lib instead of jQuery to avoid javascript conflicts and errors.&lt;/p&gt;&#xD;
+&#xD;
+&lt;strong&gt;Support: &lt;a href="http://www.safalweb.com/contact.html"&gt;http://www.safalweb.com/contact.html&lt;/a&gt;&lt;/strong&gt;&#xD;
+</description>
+    <notes>Stable Release of Safal Catalog Preview.</notes>
+    <authors><author><name>SafalWeb</name><user>safalweb</user><email>ankit.ank25@gmail.com</email></author></authors>
+    <date>2014-05-18</date>
+    <time>17:39:09</time>
+    <contents><target name="magecommunity"><dir name="Safal"><dir name="Catalogpreview"><dir name="Block"><dir name="Adminhtml"><file name="Categories.php" hash="842f28b5f5f69be96bc91d161d4b15d0"/><dir name="System"><dir name="Config"><dir name="Form"><dir name="Fieldset"><dir name="Catalogpreview"><file name="Categories.php" hash="26537faafb8f3106a153e46ec1223ee6"/></dir></dir></dir></dir></dir></dir><file name="Catalogpreview.php" hash="47ccde01d3f8b267edeb874c7b486a16"/></dir><dir name="Helper"><file name="Data.php" hash="12e41c3f3d83575117029316070f6322"/></dir><dir name="Model"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Source"><file name="Alignment.php" hash="b133cde2e56815e6270d56fc29a029a5"/><file name="Imagescope.php" hash="5276b9384ed16d904cf9ccdcc3f0a014"/><file name="Position.php" hash="bc66a19a21030d55e3314f0a9aad12cd"/></dir></dir></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="CatalogpreviewController.php" hash="534e2f363bc134ab9e5d8fcc50a7ebdb"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="dcbd4695ea9d2edf241d28348561375c"/><file name="config.xml" hash="7adf203711778d1ca28c2b0f028709b6"/><file name="system.xml" hash="12eba80ddf24e62754ecaf68deec872f"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="catalogpreview.xml" hash="ce9ff54e47632857890983faf9eb3f66"/></dir><dir name="template"><dir name="catalogpreview"><dir name="catalog"><dir name="product"><dir name="list"><file name="upsell.phtml" hash="8eb66ac0f99c203bf7aa7ac368ee8dec"/></dir><file name="list.phtml" hash="160f0a000dfe43a00abf007c6e2ff29a"/></dir></dir><dir name="checkout"><dir name="cart"><file name="crosssell.phtml" hash="de74e5942f9ced6039bf0fb3095223db"/></dir></dir><file name="style.phtml" hash="c12abc92decce588afeed63597cb3fd8"/></dir></dir></dir></dir><dir name="rwd"><dir name="default"><dir name="layout"><file name="catalogpreview.xml" hash="ce9ff54e47632857890983faf9eb3f66"/></dir><dir name="template"><dir name="catalogpreview"><dir name="catalog"><dir name="product"><dir name="list"><file name="upsell.phtml" hash="4673c9967ef2f7cd1970ee45c53761dd"/></dir><file name="list.phtml" hash="e5c25a931dccfdcb3a449a874c858dfd"/></dir></dir><dir name="checkout"><dir name="cart"><file name="crosssell.phtml" hash="706598580a7bb92b9eb36fc29d54050b"/></dir></dir><file name="style.phtml" hash="c12abc92decce588afeed63597cb3fd8"/></dir></dir></dir></dir></dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="catalogpreview.xml" hash="cfdde1a60db12387094aad8b0f68d0d1"/></dir></dir></dir></dir></target><target name="mageweb"><dir name="."><dir name="js"><dir name="swcatalogpreview"><file name="preview.js" hash="b365a50ca46ac9b7fa87d4ab87862047"/></dir></dir></dir></target><target name="magemedia"><dir name="swcp"><dir name="default"><file name="loader.gif" hash="dceb764a37e08003943a1a2210333a8f"/></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="safalweb"><dir name="all"><dir name="images"><file name="ok.gif" hash="834dfafd5f8b44c4b24a4c00add56fcf"/></dir></dir></dir><dir name="lib"><dir name="prototype"><dir name="windows"><dir name="themes"><dir name="safal"><file name="btn_bg.gif" hash="37c51a4d48a92da9648dcd3ca011039f"/><file name="content_bg.gif" hash="21278ea0da2d4256f4ced96b6080ba2e"/><file name="top_bg.gif" hash="26f28090de87d64f9b01bf624f89bfe2"/><file name="window_close.png" hash="3af14f053f360bf31f8ba2df73ec7f1e"/></dir><file name="safal.css" hash="7539a58d28ecac8cc10c80f56991dc30"/></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Safal_Catalogpreview.xml" hash="49aec5229090faa3b4bb6e724c4bc43d"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

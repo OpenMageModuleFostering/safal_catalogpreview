@@ -1,0 +1,20 @@
+<?php if($this->canShowPreview()):?>
+<style type="text/css">
+<?php
+	echo Mage::helper('catalogpreview')->getStyle(); 
+?>
+
+.loaderclass{
+	background: url("<?php echo Mage::getBaseUrl('media')."swcp/".Mage::helper('catalogpreview')->getConfig('catalogpreview/style/animation')?>") no-repeat scroll 50% 50% #FFFFFF;
+    height: 97%;
+    position: absolute;
+    width: 97%;
+}
+div#preview img{width: 100%;}
+</style>
+<script type="text/javascript">
+document.observe('dom:loaded', function() {
+	var pp = new SafalCatalogPreview("a.preview",'<?php echo Mage::helper('catalogpreview')->getConfigJson()?>');
+});
+</script>
+<?php endif;?>

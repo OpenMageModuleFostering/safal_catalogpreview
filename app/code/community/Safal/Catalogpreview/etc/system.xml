@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+        <safal translate="label" module="catalogpreview">
+            <label>Safal Web</label>
+            <sort_order>200</sort_order>
+        </safal>
+    </tabs>
+	<sections>
+		<catalogpreview>
+			<label>Catalog Preview</label>
+			<tab>safal</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>10</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<general translate="label">
+					<label>Preview Configuration</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>599</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enabled>
+							<label>Enable Catalog Preview for product listing</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>610</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Display product preview on product list page.</comment>
+						</enabled>
+						<selectcategory>
+							<label>Select Category</label>
+							<frontend_type>text</frontend_type>
+                    		<frontend_model>catalogpreview/adminhtml_system_config_form_fieldset_catalogpreview_categories</frontend_model>
+							<sort_order>610</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Display product preview on product list page.</comment>
+						</selectcategory>
+						<enableforupsell>
+							<label>Enable Catalog Preview for Upsell Product</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>610</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Display product preview on Upsell product list section on product detail page.</comment>
+						</enableforupsell>
+						<enableforcrosssell>
+							<label>Enable Catalog Preview for Crosssell Product</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>611</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Display product preview on Crosssell product list section on product detail page.</comment>
+						</enableforcrosssell>
+						<imagescope>
+							<label>Image Type to display</label>
+							<frontend_type>select</frontend_type>
+							<source_model>catalogpreview/adminhtml_system_config_source_imagescope</source_model>
+							<sort_order>612</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Choose image type to display in popup.</comment>
+						</imagescope>
+					</fields>
+				</general>
+				<style>
+					<label>Preview Style</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>600</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<backgroundcolor>
+							<label>Preview Image Background Color</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Use append [#] to colorcode or use color name.</comment>
+						</backgroundcolor>
+						<borderwidth>
+							<label>Preview Image Border Width</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Integer value in px. Do not prepend [px].</comment>
+						</borderwidth>
+						<bordercolor>
+							<label>Preview Image Border Color</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Use append [#] to colorcode or use color name.</comment>
+						</bordercolor>
+						<title>
+							<label>Show Title [Product Title]</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Show product name as product title.</comment>
+						</title>
+						<titlefontsize>
+							<label>Preview Image Title Size</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>50</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Integer value in px. Do not prepend [px].</comment>
+						</titlefontsize>
+						<titlebold>
+							<label>Bold Preview Image Title</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>55</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</titlebold>
+						<titlecolor>
+							<label>Preview Image Title Color</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Use append [#] to colorcode or use color name.</comment>
+						</titlecolor>
+						<titleposition>
+							<label>Preview Image Title Position</label>
+							<frontend_type>select</frontend_type>
+							<source_model>catalogpreview/adminhtml_system_config_source_position</source_model>
+							<sort_order>70</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</titleposition>
+						<titlealign>
+							<label>Preview Image Title Alignment</label>
+							<frontend_type>select</frontend_type>
+							<source_model>catalogpreview/adminhtml_system_config_source_alignment</source_model>
+							<sort_order>70</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</titlealign>
+						<previewpadding>
+							<label>Preview Image Padding</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>80</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Integer value in px. Do not prepend [px].</comment>
+						</previewpadding>
+						<previewwidth>
+							<label>Preview Image Width</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>90</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Integer value in px. Do not prepend [px].</comment>
+						</previewwidth>
+						<previewzindex>
+							<label>Preview Image Z-Index</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>100</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Integer value in px. Do not prepend [px].</comment>
+						</previewzindex>
+						<animation>
+							<label>Loading Animation</label>
+							<frontend_type>image</frontend_type>
+							<backend_model>adminhtml/system_config_backend_image</backend_model>
+							<upload_dir config="system/filesystem/media" scope_info="1">swcp</upload_dir>
+							<base_url type="media" scope_info="1">swcp</base_url>
+							<sort_order>110</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Allowed file types: jpeg, gif, png.</comment>
+						</animation>
+					</fields>
+				</style>
+			</groups>
+		</catalogpreview>
+	</sections>
+</config>

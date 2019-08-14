@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0.1">
+	<default>
+		<reference name="head">
+			<action method="addCss">
+				<stylesheet>lib/prototype/windows/themes/safal.css</stylesheet>
+			</action>
+		</reference>
+	</default>
+	<catalogpreview_adminhtml_catalogpreview_selectcategories>
+		<reference name="root">
+			<action method="setTemplate">
+				<template>empty.phtml</template>
+			</action>
+		</reference>
+		<reference name="content">
+			<block type="catalogpreview/adminhtml_categories" name="select.category.preview"/>
+		</reference>
+	</catalogpreview_adminhtml_catalogpreview_selectcategories>
+</layout>
